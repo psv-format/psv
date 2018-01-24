@@ -34,6 +34,7 @@ It is not ment to replace csv or json. But rather straddle the middle ground of 
 ### Difference from common pipe table syntax
 
 * No table alignment supported - This is a data format, not a display format
+* Focus on minimal complexity - This is to make it easier to test implementation and encourage adoption.
 
 ## Status
 
