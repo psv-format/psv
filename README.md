@@ -7,6 +7,10 @@ This repository contains the spec itself, along with tools for running tests aga
 
 Initial Start Of This Concept: https://talk.commonmark.org/t/side-thoughts-promoting-pipe-tables-as-a-potential-alternative-to-csv-format-e-g-psv/1862
 
+## File Extention
+
+`*.psv`
+
 ## Objective
 
 The objective of this specification is to have a file extention like `.psv` that can be reliably converted from one data format to another. For example you may want to convert the below table to a json format.
