@@ -31,6 +31,10 @@ It is not ment to replace csv or json. But rather straddle the middle ground of 
 
 **This is the initial objective. If you have a suggestion to change/improve the direction of this then feel free to suggest in the orignal [commonmark post](https://talk.commonmark.org/t/side-thoughts-promoting-pipe-tables-as-a-potential-alternative-to-csv-format-e-g-psv/1862)**
 
+### Difference from common pipe table syntax
+
+* No table alignment supported - This is a data format, not a display format
+
 ## Status
 
 * Status as of 2018-1-25
