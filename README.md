@@ -16,6 +16,10 @@ Initial Start Of This Concept: https://talk.commonmark.org/t/side-thoughts-promo
 The objective of this specification is to have a file extention like `.psv` that can be reliably converted from one data format to another. For example you may want to convert the below table to a json format.
 
 ```
+# Table Project
+
+## Sheet 1
+
 | Tables   | Are           | Cool  |  
 |----------|---------------|-------| 
 | col 1 is | ok            | $1600 | 
@@ -28,6 +32,8 @@ It is expected that humans will be mostly editing the data. While machines will 
 The spec will define a canonical recommended output, while being permissive in it's input to account for human editing.
 
 It is not ment to replace csv or json. But rather straddle the middle ground of complexity. Where at least a clearly defined table header name is required and that it be viewable and editable by both humans and machine.
+
+If possible it is also aimed to be renderable by commonmark as a document after Commonmark supports pipe tables.
 
 **This is the initial objective. If you have a suggestion to change/improve the direction of this then feel free to suggest in the orignal [commonmark post](https://talk.commonmark.org/t/side-thoughts-promoting-pipe-tables-as-a-potential-alternative-to-csv-format-e-g-psv/1862)**
 
