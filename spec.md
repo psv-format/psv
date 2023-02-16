@@ -21,7 +21,7 @@ Each worksheet and each spreadsheet starts with a _title_. They should be provid
 Headings
 --------
 
-For conistency, heading syntax and row (group) dividers are aligned, i.e. they are using the same characters. Therefore generators must use underlined Setext style for top-level `====` _worksheet_ titles and second-level `----` _spreadsheet_ titles. Readers should also support `#` prefixed ATX style. Generators should use at least four characters for the underline and they should match the length of the heading text.
+For consistency, heading syntax and row (group) dividers are aligned, i.e. they are using the same characters. Therefore generators must use underlined Setext style for top-level `====` _worksheet_ titles and second-level `----` _spreadsheet_ titles. Readers should also support `#` prefixed ATX style. Generators should use at least four characters for the underline and they should match the length of the heading text.
 
 ```````````````````````````````` markdown
 Worksheet
@@ -38,7 +38,7 @@ _here be tables_
 Separators
 ----------
 
-In _rows_, occuring in vertical progression after each other in a PSV file, the top-level marker, i.e. the equals sign `=`, consists of two parallel horizontal lines and the second-level marker, i.e. the hyphen-minus or _dash_ `-`, consists of a single horizontal line. Consequently, in _columns_, occuring in horizontal progression after each other (i.e. inside a line of text), the top-level marker should be double vertical lines and the second-level marker should be a single vertical line, i.e. the _pipe_ character `|`. The best character available in US ASCII for the double vertical line would be the broken bar `¦`, but since this is easily confused with the pipe and is not readily available on most keyboard layouts, the colon `:` is chosen instead.
+In _rows_, occurring in vertical progression after each other in a PSV file, the top-level marker, i.e. the equals sign `=`, consists of two parallel horizontal lines and the second-level marker, i.e. the hyphen-minus or _dash_ `-`, consists of a single horizontal line. Consequently, in _columns_, occurring in horizontal progression after each other (i.e. inside a line of text), the top-level marker should be double vertical lines and the second-level marker should be a single vertical line, i.e. the _pipe_ character `|`. The best character available in US ASCII for the double vertical line would be the broken bar `¦`, but since this is easily confused with the pipe and is not readily available on most keyboard layouts, the colon `:` is chosen instead.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ markdown
 ==========================
@@ -78,7 +78,7 @@ Contents, Tables
 
 - Each header cell must contain a _label_ in its first slot and may contain a _data type hint_ or a _formatting hint_ for their column or row data in its last slot. 
 - Footer cells should contain a _symbolic aggregation formula_. (These are similar to `SUBTOTAL()` in most spreadsheet applications.)
-- **(Alpha:)** A _symbolic aggregation formula_ is a sequence of 3 math characters, e.g. `=^+`. The inital one can be repeated at the end, e.g. `=^+=`.
+- **(Alpha:)** A _symbolic aggregation formula_ is a sequence of 3 math characters, e.g. `=^+`. The initial one can be repeated at the end, e.g. `=^+=`.
    1. `=` the start of a formula, alternatively `~` rounds, `<` rounds down, `>` rounds up
    2. `<` or `>` specify that the formula applies to the current row, `^` to the current column.
    3. operation:
