@@ -45,36 +45,11 @@ body.dark-mode {
 }
 
 /* Code block styles */
-.highlight {
-    background-color: #333333;
-    font-size: 14px;
-    /* Align code to the left */
-    margin: auto;
-    /* Center the code block */
-    width: 80%;
-    /* Adjust the width of the code block */
-}
-
-.dark-mode pre {
-    margin: auto;
-    /* Center the code block */
-    width: 80%;
-    /* Adjust the width of the code block */
-    background-color: #333333;
-    /* Darker code block background color */
-    border: 1px solid #555555;
-    /* Darker border color */
-    padding: 0;
-    /* Remove padding to eliminate whitespace */
-    border-radius: 5px;
-    /* Add border-radius for rounded corners */
-    overflow: hidden;
-    /* Hide any overflow content */
-}
-
 code {
+    margin: auto;
     text-align: left;
-    padding: 2px 4px;
+    padding: 2px 10px;
+    margin: 0px auto;
     color: #ffffff;
     background-color: #333333;
     border: 1px solid #555555;

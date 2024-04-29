@@ -3,49 +3,62 @@ layout: default
 title: Overview
 overview: true
 ---
-<div class='jumbotron'>
-    <h1>PSV</h1>
-    <h2>PSV Pipe Separated Value</h2>
-    <p class='lead'>"PSV Pipe Separated Value (PSV) is a data format whose design goals is to enable use of markdown tables as a data format with graceful fallover when rendered in html.”</p>
-    <code class="language-markdown" data-lang="markdown">
-        {#Personnels}
-        | ID [uuidv4 unique]                   | Name       | Age [years] | Occupation       | Country   | Favorite Food |
-        | ------------------------------------ | ---------- | ----------- | ---------------- | --------- | ------------- |
-        | 0b32a75e-e190-4a71-b0e1-45e0d826584f | Alice      | 30          | Software Engineer| USA       | Pizza         |
-        | 1e6e3e5a-f6cf-4b30-bc42-5365418604a1 | Bob        | 35          | Doctor           | UK        | Sushi         |
-        | 9a7f548f-0854-4c23-bb39-1aefb48b47ae | Charlie    | 28          | Graphic Designer | Canada    | Tacos         |
-        | d12cc354-8845-4dc2-91b0-d714f2a33ef3 | David      | 40          | Teacher          | Australia | Pasta         |
-        | cf0294f1-8d71-4e01-9619-62ebfdd2a47d | Emma       | 33          | Accountant       | Germany   | Steak         |
-        | e4fcb648-7f80-464d-9a0d-bc00ac9d5f58 | Frank      | 45          | Chef             | France    | Croissant     |
-        | b5c79927-5250-4919-848d-68f0c5d2e11d | Grace      | 29          | Nurse            | Spain     | Paella        |
-        | f0d31595-0d11-4f33-b9b1-c8b95eb354a1 | Henry      | 37          | Architect        | Italy     | Gelato        |
-        | bfc1db9b-f9e1-4dd9-b1d1-22f74264e0e0 | Isabella   | 31          | Lawyer           | Brazil    | Feijoada      |
-        | 149118b2-08e0-4e6a-bc6a-f56184f7a7fc | John       | 42          | Scientist        | Japan     | Ramen         |
-        | b38e1601-60ff-4458-8ae5-6efdfaa69d0f | Mia        | 27          | Writer           | Ireland   | Irish Stew    |
+
+<div class="jumbotron">
+  <h1>PSV</h1>
+  <h2>PSV Pipe Separated Value</h2>
+  <p class="lead">
+    "PSV Pipe Separated Value (PSV) is a data format whose design goals is to
+    enable use of markdown tables as a data format with graceful fallover when
+    rendered in html.”
+  </p>
+  <!-- prettier-ignore -->
+  <code class="language-markdown" data-lang="markdown">
+{#personnel}
+| ID [uuidv4 unique]                   | Name       | Age [years] | Occupation       | Country   | Favorite Food |
+| ------------------------------------ | ---------- | ----------- | ---------------- | --------- | ------------- |
+| 0b32a75e-e190-4a71-b0e1-45e0d826584f | Alice      | 30          | Software Engineer| USA       | Pizza         |
+| 1e6e3e5a-f6cf-4b30-bc42-5365418604a1 | Bob        | 35          | Doctor           | UK        | Sushi         |
+| 9a7f548f-0854-4c23-bb39-1aefb48b47ae | Charlie    | 28          | Graphic Designer | Canada    | Tacos         |
+| d12cc354-8845-4dc2-91b0-d714f2a33ef3 | David      | 40          | Teacher          | Australia | Pasta         |
+| cf0294f1-8d71-4e01-9619-62ebfdd2a47d | Emma       | 33          | Accountant       | Germany   | Steak         |
+| e4fcb648-7f80-464d-9a0d-bc00ac9d5f58 | Frank      | 45          | Chef             | France    | Croissant     |
+| b5c79927-5250-4919-848d-68f0c5d2e11d | Grace      | 29          | Nurse            | Spain     | Paella        |
+| f0d31595-0d11-4f33-b9b1-c8b95eb354a1 | Henry      | 37          | Architect        | Italy     | Gelato        |
+| bfc1db9b-f9e1-4dd9-b1d1-22f74264e0e0 | Isabella   | 31          | Lawyer           | Brazil    | Feijoada      |
+| 149118b2-08e0-4e6a-bc6a-f56184f7a7fc | John       | 42          | Scientist        | Japan     | Ramen         |
+| b38e1601-60ff-4458-8ae5-6efdfaa69d0f | Mia        | 27          | Writer           | Ireland   | Irish Stew    |
     </code>
 </div>
-<hr>
-<div class='row-fluid'>
-    <div class='span4'>
-        <h2>Commonmark / Markdown</h2>
-        <p>
-            PSV is based on the common pipe table syntax seen in <a href="https://commonmark.org/">commonmark</a> / <a href="https://www.markdownguide.org/">markdown</a> extensions
-        </p>
-        <h3>No Schema needed</h3>
-        <p>
-            PSV table headers handling can infer the type via header names with additional syntax to assist in disambiguation if needed.
-        </p>
-    </div>
-    <div class='span4'>
-        <h2>Rapidly Developing Format</h2>
-        <p>
-            PSV is rapidly evolving and is intended to be defined in an Internet Standard,
-            <a href='/spec.html'>RFC ????.</a>
-        </p>
-        <h2>Origin</h2>
-        <p>
-            This PSV file format was originally thought about from this post
-            <a href='https://talk.commonmark.org/t/side-thoughts-promoting-pipe-tables-as-a-potential-alternative-to-csv-format-e-g-psv/1862'>Commonmark Talk Thread.</a>
-        </p>
-    </div>
+<hr />
+<div class="row-fluid">
+  <div class="span4">
+    <h2>Commonmark / Markdown</h2>
+    <p>
+      PSV is based on the common pipe table syntax seen in
+      <a href="https://commonmark.org/">commonmark</a> /
+      <a href="https://www.markdownguide.org/">markdown</a> extensions
+    </p>
+    <h3>No Schema needed</h3>
+    <p>
+      PSV table headers handling can infer the type via header names with
+      additional syntax to assist in disambiguation if needed.
+    </p>
+  </div>
+  <div class="span4">
+    <h2>Rapidly Developing Format</h2>
+    <p>
+      PSV is rapidly evolving and is intended to be defined in an Internet
+      Standard,
+      <a href="/spec.html">RFC ????.</a>
+    </p>
+    <h2>Origin</h2>
+    <p>
+      This PSV file format was originally thought about from this post
+      <a
+        href="https://talk.commonmark.org/t/side-thoughts-promoting-pipe-tables-as-a-potential-alternative-to-csv-format-e-g-psv/1862"
+        >Commonmark Talk Thread.</a
+      >
+    </p>
+  </div>
 </div>
