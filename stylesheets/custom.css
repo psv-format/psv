@@ -46,12 +46,20 @@ body.dark-mode {
 
 /* Code block styles */
 .highlight {
-    background-color: #333333
+    background-color: #333333;
+    font-size: 14px;
+    /* Align code to the left */
+    margin: auto;
+    /* Center the code block */
+    width: 80%;
+    /* Adjust the width of the code block */
 }
 
 .dark-mode pre {
-    color: #ffffff;
-    /* Light code text color */
+    margin: auto;
+    /* Center the code block */
+    width: 80%;
+    /* Adjust the width of the code block */
     background-color: #333333;
     /* Darker code block background color */
     border: 1px solid #555555;
@@ -65,11 +73,37 @@ body.dark-mode {
 }
 
 code {
+    text-align: left;
     padding: 2px 4px;
     color: #ffffff;
     background-color: #333333;
     border: 1px solid #555555;
-    white-space: nowrap
+    display: block;
+    white-space: pre-wrap;
+    font-size: calc(min(1.0vw, 12px));
+    /* Adjust font size responsively */
+    line-height: 1.2;
+    /* Adjust line height to reduce vertical spacing */
+}
+
+/* Media query for smaller window sizes */
+@media (max-width: 768px) {
+    .code {
+        font-size: 10px;
+        /* Reduce font size for smaller screens */
+        padding: 8px;
+        /* Adjust padding for smaller screens */
+    }
+}
+
+/* Media query for even smaller window sizes */
+@media (max-width: 480px) {
+    .code {
+        font-size: 8px;
+        /* Further reduce font size for very small screens */
+        padding: 6px;
+        /* Further adjust padding for very small screens */
+    }
 }
 
 /* Navbar inner styles for dark mode */
