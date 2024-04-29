@@ -1,0 +1,130 @@
+/* custom.css */
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    /* Dark background color */
+    color: #ffffff;
+    /* Light text color */
+}
+
+/* Navbar styles */
+.navbar-dark {
+    background-color: #333333;
+    /* Darker navbar background color */
+    color: #ffffff;
+    /* Light navbar text color */
+}
+
+/* Table styles */
+.table-dark {
+    color: #ffffff;
+    /* Light table text color */
+    background-color: #333333;
+    /* Darker table background color */
+}
+
+/* Form styles */
+.form-control.dark-mode {
+    color: #ffffff;
+    /* Light form control text color */
+    background-color: #333333;
+    /* Darker form control background color */
+    border-color: #555555;
+    /* Darker border color */
+}
+
+/* Buttons */
+.btn-dark-mode {
+    color: #ffffff;
+    /* Light button text color */
+    background-color: #333333;
+    /* Darker button background color */
+    border-color: #555555;
+    /* Darker border color */
+}
+
+/* Code block styles */
+.highlight {
+    background-color: #333333
+}
+
+.dark-mode pre {
+    color: #ffffff;
+    /* Light code text color */
+    background-color: #333333;
+    /* Darker code block background color */
+    border: 1px solid #555555;
+    /* Darker border color */
+    padding: 0;
+    /* Remove padding to eliminate whitespace */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners */
+    overflow: hidden;
+    /* Hide any overflow content */
+}
+
+code {
+    padding: 2px 4px;
+    color: #ffffff;
+    background-color: #333333;
+    border: 1px solid #555555;
+    white-space: nowrap
+}
+
+/* Navbar inner styles for dark mode */
+.navbar-inner {
+    background-image: linear-gradient(to bottom, #333333, #1e1e1e);
+    /* Darker background gradient for the navbar */
+    color: #ffffff;
+    /* Light text color for the navbar */
+}
+
+.navbar .nav>li>a {
+    float: none;
+    padding: 10px 15px 10px;
+    color: #777;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #1e1e1e;
+}
+
+.navbar .nav>.active>a,
+.navbar .nav>.active>a:hover,
+.navbar .nav>.active>a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #333333;
+    -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+    -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125)
+}
+
+/* Button styles for dark mode */
+.btn {
+    color: #ffffff;
+    /* Light text color for buttons */
+    background-color: #333333;
+    /* Darker background color for buttons */
+    border-color: #333333;
+    /* Darker border color for buttons */
+    text-shadow: none;
+    /* Remove text shadow in dark mode */
+    box-shadow: none;
+    /* Remove box shadow in dark mode */
+    background-image: linear-gradient(to bottom, #333333, #1e1e1e);
+}
+
+/* Button hover and focus styles for dark mode */
+.btn:hover,
+.btn:focus {
+    color: #ffffff;
+    /* Light text color for hovered/focused buttons */
+    text-decoration: none;
+    /* Remove text decoration */
+    background-position: 0 0;
+    /* Adjust background position for hover/focus effect */
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear
+}
