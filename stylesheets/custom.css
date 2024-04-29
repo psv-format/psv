@@ -46,7 +46,6 @@ body.dark-mode {
 
 /* Code block styles */
 code {
-    margin: auto;
     text-align: left;
     padding: 2px 10px;
     margin: 0px auto;
@@ -59,6 +58,7 @@ code {
     /* Adjust font size responsively */
     line-height: 1.2;
     /* Adjust line height to reduce vertical spacing */
+    width: max-content;
 }
 
 /* Media query for smaller window sizes */
