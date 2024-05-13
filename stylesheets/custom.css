@@ -44,8 +44,15 @@ body.dark-mode {
     /* Darker border color */
 }
 
-/* Code block styles */
 code {
+    color: #ffffff;
+    background-color: #333333;
+    border: 1px solid #555555;
+    font-size: calc(min(1.0vw, 12px));
+}
+
+/* Code block styles */
+pre code {
     text-align: left;
     padding: 2px 10px;
     margin: 0px auto;
@@ -63,7 +70,7 @@ code {
 
 /* Media query for smaller window sizes */
 @media (max-width: 768px) {
-    .code {
+    pre .code {
         font-size: 10px;
         /* Reduce font size for smaller screens */
         padding: 8px;
@@ -73,7 +80,7 @@ code {
 
 /* Media query for even smaller window sizes */
 @media (max-width: 480px) {
-    .code {
+    pre .code {
         font-size: 8px;
         /* Further reduce font size for very small screens */
         padding: 6px;
